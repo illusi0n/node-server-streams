@@ -1,8 +1,7 @@
 const fs = require('fs');
 const file = fs.createWriteStream('./big.file');
 
-// ~ 450MB file size
-const MAX_LINES = 5e6;
+const MAX_LINES = 2e6;
 
 for(let i=0;i<=MAX_LINES;i++) {
   // write() is returning status if the buffer is full

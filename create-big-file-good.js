@@ -2,8 +2,7 @@ const fs = require('fs');
 const file = fs.createWriteStream('./big.file');
 const { Readable } = require('stream');
 
-// ~ 450MB file size
-const MAX_LINES = 5e6;
+const MAX_LINES = 2e6;
 let currentLines = 0;
 
 const readStream = new Readable({
